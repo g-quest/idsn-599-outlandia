@@ -10,7 +10,8 @@ import RealityKit
 
 struct Capture: View {
     var body: some View {
-        ARViewContainer().edgesIgnoringSafeArea(.all)
+//        ARViewContainer().edgesIgnoringSafeArea(.all)
+        ARViewContainer()
     }
 }
 

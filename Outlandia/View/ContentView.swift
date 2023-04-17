@@ -9,20 +9,21 @@ import SwiftUI
 
 
 struct ContentView : View {
-    @State private var selection: Tab = .feed
+    @StateObject var viewModel = OutlandiaPostsViewModel()
+    @State private var selection: Tab = .community
     
     enum Tab {
         case capture
         case collection
         case leaderboard
-        case feed
+        case community
     }
     
     var body: some View {
         TabView(selection: $selection) {
             Capture()
                 .tabItem {
-                    Label("Capture", systemImage: "camera.fill")
+                    Label("Discover", systemImage: "globe.americas.fill")
                 }
                 .tag(Tab.capture)
             Collection()
@@ -35,11 +36,12 @@ struct ContentView : View {
                     Label("Leaderboard", systemImage: "medal.fill")
                 }
                 .tag(Tab.leaderboard)
-            Feed()
+            PostList()
+                .environmentObject(viewModel)
                 .tabItem {
-                    Label("Feed", systemImage: "house.fill")
+                    Label("Community", systemImage: "person.3.fill")
                 }
-                .tag(Tab.feed)
+                .tag(Tab.community)
         }
  
     }
