@@ -12,6 +12,10 @@
 		135685EE29ECDD9100C7EA9A /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 135685ED29ECDD9100C7EA9A /* Experience.rcproject */; };
 		135685F029ECDD9200C7EA9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 135685EF29ECDD9200C7EA9A /* Assets.xcassets */; };
 		135685F329ECDD9200C7EA9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 135685F229ECDD9200C7EA9A /* Preview Assets.xcassets */; };
+		135685FD29ECEFEA00C7EA9A /* Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135685FC29ECEFEA00C7EA9A /* Capture.swift */; };
+		135685FF29ECF0BC00C7EA9A /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135685FE29ECF0BC00C7EA9A /* Collection.swift */; };
+		1356860129ECF0D700C7EA9A /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356860029ECF0D700C7EA9A /* Leaderboard.swift */; };
+		1356860329ECF12E00C7EA9A /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356860229ECF12E00C7EA9A /* Feed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		135685ED29ECDD9100C7EA9A /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		135685EF29ECDD9200C7EA9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		135685F229ECDD9200C7EA9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		135685FC29ECEFEA00C7EA9A /* Capture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capture.swift; sourceTree = "<group>"; };
+		135685FE29ECF0BC00C7EA9A /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		1356860029ECF0D700C7EA9A /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
+		1356860229ECF12E00C7EA9A /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +61,10 @@
 		135685E829ECDD9100C7EA9A /* Outlandia */ = {
 			isa = PBXGroup;
 			children = (
+				135685FA29ECEF4A00C7EA9A /* Model */,
+				135685F929ECEF3A00C7EA9A /* View */,
+				135685FB29ECEF5900C7EA9A /* ViewModel */,
 				135685E929ECDD9100C7EA9A /* AppDelegate.swift */,
-				135685EB29ECDD9100C7EA9A /* ContentView.swift */,
 				135685ED29ECDD9100C7EA9A /* Experience.rcproject */,
 				135685EF29ECDD9200C7EA9A /* Assets.xcassets */,
 				135685F129ECDD9200C7EA9A /* Preview Content */,
@@ -68,6 +78,32 @@
 				135685F229ECDD9200C7EA9A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		135685F929ECEF3A00C7EA9A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				135685EB29ECDD9100C7EA9A /* ContentView.swift */,
+				135685FC29ECEFEA00C7EA9A /* Capture.swift */,
+				135685FE29ECF0BC00C7EA9A /* Collection.swift */,
+				1356860029ECF0D700C7EA9A /* Leaderboard.swift */,
+				1356860229ECF12E00C7EA9A /* Feed.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		135685FA29ECEF4A00C7EA9A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		135685FB29ECEF5900C7EA9A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				135685FD29ECEFEA00C7EA9A /* Capture.swift in Sources */,
+				1356860129ECF0D700C7EA9A /* Leaderboard.swift in Sources */,
+				135685FF29ECF0BC00C7EA9A /* Collection.swift in Sources */,
+				1356860329ECF12E00C7EA9A /* Feed.swift in Sources */,
 				135685EC29ECDD9100C7EA9A /* ContentView.swift in Sources */,
 				135685EA29ECDD9100C7EA9A /* AppDelegate.swift in Sources */,
 				135685EE29ECDD9100C7EA9A /* Experience.rcproject in Sources */,
