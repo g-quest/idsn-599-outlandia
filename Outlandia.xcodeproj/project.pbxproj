@@ -12,7 +12,6 @@
 		135685EE29ECDD9100C7EA9A /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 135685ED29ECDD9100C7EA9A /* Experience.rcproject */; };
 		135685F029ECDD9200C7EA9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 135685EF29ECDD9200C7EA9A /* Assets.xcassets */; };
 		135685F329ECDD9200C7EA9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 135685F229ECDD9200C7EA9A /* Preview Assets.xcassets */; };
-		135685FD29ECEFEA00C7EA9A /* Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135685FC29ECEFEA00C7EA9A /* Capture.swift */; };
 		135685FF29ECF0BC00C7EA9A /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135685FE29ECF0BC00C7EA9A /* Collection.swift */; };
 		1356860129ECF0D700C7EA9A /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356860029ECF0D700C7EA9A /* Leaderboard.swift */; };
 		1356860629ECF39A00C7EA9A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356860529ECF39A00C7EA9A /* ImagePicker.swift */; };
@@ -25,6 +24,8 @@
 		1356861629ECF74900C7EA9A /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356861529ECF74900C7EA9A /* PostList.swift */; };
 		1356861829ECF77100C7EA9A /* PostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356861729ECF77100C7EA9A /* PostDetail.swift */; };
 		1356861A29ECF7D300C7EA9A /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356861929ECF7D300C7EA9A /* Profile.swift */; };
+		1356861B29ED0C1C00C7EA9A /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135685FC29ECEFEA00C7EA9A /* Discover.swift */; };
+		1356861F29ED0F7700C7EA9A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356861E29ED0F7700C7EA9A /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +35,7 @@
 		135685ED29ECDD9100C7EA9A /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		135685EF29ECDD9200C7EA9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		135685F229ECDD9200C7EA9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		135685FC29ECEFEA00C7EA9A /* Capture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capture.swift; sourceTree = "<group>"; };
+		135685FC29ECEFEA00C7EA9A /* Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
 		135685FE29ECF0BC00C7EA9A /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		1356860029ECF0D700C7EA9A /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
 		1356860529ECF39A00C7EA9A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		1356861529ECF74900C7EA9A /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
 		1356861729ECF77100C7EA9A /* PostDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetail.swift; sourceTree = "<group>"; };
 		1356861929ECF7D300C7EA9A /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		1356861E29ED0F7700C7EA9A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				135685ED29ECDD9100C7EA9A /* Experience.rcproject */,
 				135685EF29ECDD9200C7EA9A /* Assets.xcassets */,
 				135685F129ECDD9200C7EA9A /* Preview Content */,
+				1356861E29ED0F7700C7EA9A /* Coordinator.swift */,
 			);
 			path = Outlandia;
 			sourceTree = "<group>";
@@ -102,10 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				135685EB29ECDD9100C7EA9A /* ContentView.swift */,
-				1356861329ECF72200C7EA9A /* Posts */,
 				1356860429ECF37300C7EA9A /* Helper Views */,
-				135685FC29ECEFEA00C7EA9A /* Capture.swift */,
+				1356861329ECF72200C7EA9A /* Posts */,
 				135685FE29ECF0BC00C7EA9A /* Collection.swift */,
+				135685FC29ECEFEA00C7EA9A /* Discover.swift */,
 				1356860029ECF0D700C7EA9A /* Leaderboard.swift */,
 			);
 			path = View;
@@ -222,13 +225,14 @@
 				1356861A29ECF7D300C7EA9A /* Profile.swift in Sources */,
 				1356861229ECF4DC00C7EA9A /* SquareImage.swift in Sources */,
 				1356861629ECF74900C7EA9A /* PostList.swift in Sources */,
-				135685FD29ECEFEA00C7EA9A /* Capture.swift in Sources */,
 				1356860C29ECF43F00C7EA9A /* Post.swift in Sources */,
 				1356861829ECF77100C7EA9A /* PostDetail.swift in Sources */,
 				1356860A29ECF41C00C7EA9A /* OutlandiaPosts.swift in Sources */,
 				1356860129ECF0D700C7EA9A /* Leaderboard.swift in Sources */,
 				1356860E29ECF4A600C7EA9A /* CameraPicker.swift in Sources */,
+				1356861B29ED0C1C00C7EA9A /* Discover.swift in Sources */,
 				135685FF29ECF0BC00C7EA9A /* Collection.swift in Sources */,
+				1356861F29ED0F7700C7EA9A /* Coordinator.swift in Sources */,
 				1356861029ECF4C100C7EA9A /* RoundedImage.swift in Sources */,
 				135685EC29ECDD9100C7EA9A /* ContentView.swift in Sources */,
 				1356860629ECF39A00C7EA9A /* ImagePicker.swift in Sources */,

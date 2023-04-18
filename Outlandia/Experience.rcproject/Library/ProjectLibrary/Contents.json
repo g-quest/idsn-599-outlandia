@@ -1,3 +1,22 @@
 [
-
+  {
+    "libraryIdentifier" : "253e6520d1e2e8179e1c59aa941b30c0",
+    "format" : "model",
+    "displayName" : "Dachshund.usdz"
+  },
+  {
+    "libraryIdentifier" : "c130adb0729cd1fa2669d46dc120b162",
+    "format" : "model",
+    "displayName" : "Tyrannosaurus_Rex_skull_for_3D_print.usdz"
+  },
+  {
+    "libraryIdentifier" : "4fd9365ea593e809adc78526bb57b72d",
+    "format" : "model",
+    "displayName" : "New Project 2.reality"
+  },
+  {
+    "libraryIdentifier" : "0c98c33b614ecd08ea007783a681755e",
+    "format" : "model",
+    "displayName" : "New Project.reality"
+  }
 ]

@@ -13,7 +13,7 @@ struct ContentView : View {
     @State private var selection: Tab = .community
     
     enum Tab {
-        case capture
+        case discover
         case collection
         case leaderboard
         case community
@@ -21,11 +21,11 @@ struct ContentView : View {
     
     var body: some View {
         TabView(selection: $selection) {
-            Capture()
+            Discover()
                 .tabItem {
                     Label("Discover", systemImage: "globe.americas.fill")
                 }
-                .tag(Tab.capture)
+                .tag(Tab.discover)
             Collection()
                 .tabItem {
                     Label("Collection", systemImage: "square.stack.3d.down.right.fill")
