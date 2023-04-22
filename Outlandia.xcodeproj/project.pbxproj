@@ -24,6 +24,13 @@
 		1356861629ECF74900C7EA9A /* Community.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356861529ECF74900C7EA9A /* Community.swift */; };
 		1356861829ECF77100C7EA9A /* CommunityDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356861729ECF77100C7EA9A /* CommunityDetail.swift */; };
 		1356861B29ED0C1C00C7EA9A /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135685FC29ECEFEA00C7EA9A /* Discover.swift */; };
+		13E8566729F3C4A600BEF90A /* DiscoverLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E8566629F3C4A600BEF90A /* DiscoverLocation.swift */; };
+		13E8566929F3C55D00BEF90A /* DiscoverLocationsViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E8566829F3C55D00BEF90A /* DiscoverLocationsViewModal.swift */; };
+		13E8566B29F3C5F700BEF90A /* DiscoverLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E8566A29F3C5F700BEF90A /* DiscoverLocations.swift */; };
+		13E8566D29F3C81D00BEF90A /* DiscoverLocationsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E8566C29F3C81D00BEF90A /* DiscoverLocationsList.swift */; };
+		13E8566F29F3C84300BEF90A /* DiscoverLocationPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E8566E29F3C84300BEF90A /* DiscoverLocationPreview.swift */; };
+		13E8567129F3C87C00BEF90A /* DiscoverLocationMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E8567029F3C87C00BEF90A /* DiscoverLocationMapAnnotation.swift */; };
+		13E8567329F3C89F00BEF90A /* DiscoverLocationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E8567229F3C89F00BEF90A /* DiscoverLocationDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +52,13 @@
 		1356861129ECF4DC00C7EA9A /* SquareImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareImage.swift; sourceTree = "<group>"; };
 		1356861529ECF74900C7EA9A /* Community.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Community.swift; sourceTree = "<group>"; };
 		1356861729ECF77100C7EA9A /* CommunityDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityDetail.swift; sourceTree = "<group>"; };
+		13E8566629F3C4A600BEF90A /* DiscoverLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverLocation.swift; sourceTree = "<group>"; };
+		13E8566829F3C55D00BEF90A /* DiscoverLocationsViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverLocationsViewModal.swift; sourceTree = "<group>"; };
+		13E8566A29F3C5F700BEF90A /* DiscoverLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverLocations.swift; sourceTree = "<group>"; };
+		13E8566C29F3C81D00BEF90A /* DiscoverLocationsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverLocationsList.swift; sourceTree = "<group>"; };
+		13E8566E29F3C84300BEF90A /* DiscoverLocationPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverLocationPreview.swift; sourceTree = "<group>"; };
+		13E8567029F3C87C00BEF90A /* DiscoverLocationMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverLocationMapAnnotation.swift; sourceTree = "<group>"; };
+		13E8567229F3C89F00BEF90A /* DiscoverLocationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverLocationDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +126,7 @@
 		135685FA29ECEF4A00C7EA9A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				13E8566529F3C48800BEF90A /* Discover */,
 				13E8566129F3B8DA00BEF90A /* Community */,
 			);
 			path = Model;
@@ -121,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				1356860729ECF3E100C7EA9A /* CommunityPostsViewModel.swift */,
+				13E8566829F3C55D00BEF90A /* DiscoverLocationsViewModal.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -158,6 +174,10 @@
 			isa = PBXGroup;
 			children = (
 				135685FC29ECEFEA00C7EA9A /* Discover.swift */,
+				13E8566C29F3C81D00BEF90A /* DiscoverLocationsList.swift */,
+				13E8566E29F3C84300BEF90A /* DiscoverLocationPreview.swift */,
+				13E8567029F3C87C00BEF90A /* DiscoverLocationMapAnnotation.swift */,
+				13E8567229F3C89F00BEF90A /* DiscoverLocationDetail.swift */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -176,6 +196,15 @@
 				1356860029ECF0D700C7EA9A /* Explore.swift */,
 			);
 			path = Explore;
+			sourceTree = "<group>";
+		};
+		13E8566529F3C48800BEF90A /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				13E8566629F3C4A600BEF90A /* DiscoverLocation.swift */,
+				13E8566A29F3C5F700BEF90A /* DiscoverLocations.swift */,
+			);
+			path = Discover;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,13 +277,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13E8567129F3C87C00BEF90A /* DiscoverLocationMapAnnotation.swift in Sources */,
 				1356861229ECF4DC00C7EA9A /* SquareImage.swift in Sources */,
+				13E8566D29F3C81D00BEF90A /* DiscoverLocationsList.swift in Sources */,
 				1356861629ECF74900C7EA9A /* Community.swift in Sources */,
+				13E8566729F3C4A600BEF90A /* DiscoverLocation.swift in Sources */,
 				1356860C29ECF43F00C7EA9A /* CommunityPost.swift in Sources */,
 				1356861829ECF77100C7EA9A /* CommunityDetail.swift in Sources */,
+				13E8566B29F3C5F700BEF90A /* DiscoverLocations.swift in Sources */,
 				1356860A29ECF41C00C7EA9A /* CommunityPosts.swift in Sources */,
 				1356860129ECF0D700C7EA9A /* Explore.swift in Sources */,
+				13E8566F29F3C84300BEF90A /* DiscoverLocationPreview.swift in Sources */,
 				1356860E29ECF4A600C7EA9A /* CameraPicker.swift in Sources */,
+				13E8566929F3C55D00BEF90A /* DiscoverLocationsViewModal.swift in Sources */,
 				1356861B29ED0C1C00C7EA9A /* Discover.swift in Sources */,
 				135685FF29ECF0BC00C7EA9A /* Collection.swift in Sources */,
 				1356861029ECF4C100C7EA9A /* RoundedImage.swift in Sources */,
@@ -263,6 +298,7 @@
 				135685EA29ECDD9100C7EA9A /* AppDelegate.swift in Sources */,
 				1356860829ECF3E100C7EA9A /* CommunityPostsViewModel.swift in Sources */,
 				135685EE29ECDD9100C7EA9A /* Experience.rcproject in Sources */,
+				13E8567329F3C89F00BEF90A /* DiscoverLocationDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

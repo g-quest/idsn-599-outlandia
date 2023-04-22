@@ -9,7 +9,9 @@ import SwiftUI
 
 
 struct ContentView : View {
-    @StateObject var viewModel = CommunityPostsViewModel()
+    @StateObject var discoverViewModel = DiscoverLocationsViewModel()
+    @StateObject var communityViewModel = CommunityPostsViewModel()
+    
     @State private var selection: Tab = .discover
     
     enum Tab {
@@ -22,12 +24,13 @@ struct ContentView : View {
     var body: some View {
         TabView(selection: $selection) {
             Discover()
+                .environmentObject(discoverViewModel)
                 .tabItem {
                     Label("Discover", systemImage: "globe.americas.fill")
                 }
                 .tag(Tab.discover)
             Community()
-                .environmentObject(viewModel)
+                .environmentObject(communityViewModel)
                 .tabItem {
                     Label("Community", systemImage: "person.3.fill")
                 }
@@ -43,7 +46,6 @@ struct ContentView : View {
                 }
                 .tag(Tab.explore)
         }
- 
     }
 }
 
