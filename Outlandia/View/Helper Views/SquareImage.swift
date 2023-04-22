@@ -24,9 +24,9 @@ struct SquareImage: View {
 }
 
 struct SquareImage_Previews: PreviewProvider {
-    static let viewModel = OutlandiaPostsViewModel()
+    static let viewModel = CommunityPostsViewModel()
     
     static var previews: some View {
-        SquareImage(name: viewModel.outlandiaPosts[4].image)
+        SquareImage(name: viewModel.posts[4].image)
     }
 }

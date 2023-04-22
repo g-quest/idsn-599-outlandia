@@ -1,5 +1,5 @@
 //
-//  PostList.swift
+//  Community.swift
 //  Outlandia
 //
 //  Created by GREGORY CUESTA on 4/16/23.
@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct PostList: View {
-    @EnvironmentObject var viewModel: OutlandiaPostsViewModel
+struct Community: View {
+    @EnvironmentObject var viewModel: CommunityPostsViewModel
     @State var showCamera = false
     @State var showPhotos = false
     
@@ -16,8 +16,8 @@ struct PostList: View {
         
         ZStack(alignment: .bottom) {
             List {
-                ForEach(viewModel.outlandiaPosts) { post in
-                    PostDetail(post: post)
+                ForEach(viewModel.posts) { post in
+                    CommunityDetail(post: post)
                         .listRowInsets(.init(top: 10,
                                              leading: 0,
                                              bottom: 10,
@@ -57,10 +57,10 @@ struct PostList: View {
 }
 
 
-struct PostList_Previews: PreviewProvider {
-    static let viewModel = OutlandiaPostsViewModel()
+struct Community_Previews: PreviewProvider {
+    static let viewModel = CommunityPostsViewModel()
     
     static var previews: some View {
-        PostList().environmentObject(viewModel)
+        Community().environmentObject(viewModel)
     }
 }

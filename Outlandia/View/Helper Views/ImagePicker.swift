@@ -12,7 +12,7 @@ import PhotosUI
 
 struct ImagePicker: UIViewControllerRepresentable {
     
-    var viewModel: OutlandiaPostsViewModel
+    var viewModel: CommunityPostsViewModel
 
     func makeUIViewController(context: Context) -> PHPickerViewController {
         var config = PHPickerConfiguration()
@@ -56,7 +56,7 @@ struct ImagePicker: UIViewControllerRepresentable {
 
 struct ImagePicker_Previews: PreviewProvider {
     static var previews: some View {
-        ImagePicker(viewModel: OutlandiaPostsViewModel())
+        ImagePicker(viewModel: CommunityPostsViewModel())
     }
 }
 #endif

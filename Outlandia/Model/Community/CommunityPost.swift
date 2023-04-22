@@ -1,5 +1,5 @@
 //
-//  Post.swift
+//  CommunityPost.swift
 //  Outlandia
 //
 //  Created by GREGORY CUESTA on 4/16/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Post: Identifiable {
+struct CommunityPost: Identifiable {
     var id: UUID = UUID()
     var title: String
     var location: String

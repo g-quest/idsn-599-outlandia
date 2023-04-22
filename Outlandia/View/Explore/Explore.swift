@@ -1,5 +1,5 @@
 //
-//  Capture.swift
+//  Explore.swift
 //  Outlandia
 //
 //  Created by GREGORY CUESTA on 4/16/23.
@@ -7,8 +7,9 @@
 
 import SwiftUI
 import RealityKit
+import ARKit
 
-struct Discover: View {
+struct Explore: View {
     var body: some View {
 //        ARViewContainer().edgesIgnoringSafeArea(.all)
         ARViewContainer()
@@ -27,6 +28,16 @@ struct ARViewContainer: UIViewRepresentable {
         // Add the box anchor to the scene
         arView.scene.anchors.append(boxAnchor)
         
+//        if !ARFaceTrackingConfiguration.isSupported {
+//            print("Your device does not support face anchors!")
+//        } else {
+//            let configuration = ARFaceTrackingConfiguration()
+//            arView.session.run(configuration)
+//
+//            let faceAnchor = try! Experience.loadFace()
+//            arView.scene.addAnchor(faceAnchor)
+//        }
+        
         return arView
         
     }
@@ -35,8 +46,8 @@ struct ARViewContainer: UIViewRepresentable {
     
 }
 
-struct Discover_Previews: PreviewProvider {
+struct Explore_Previews: PreviewProvider {
     static var previews: some View {
-        Discover()
+        Explore()
     }
 }

@@ -9,7 +9,7 @@ import SwiftUI
 #if os(iOS)
 
 struct CameraPicker: UIViewControllerRepresentable {
-    var viewModel: OutlandiaPostsViewModel
+    var viewModel: CommunityPostsViewModel
     @Environment(\.dismiss) private var dismiss
 
     
@@ -49,7 +49,7 @@ struct CameraPicker: UIViewControllerRepresentable {
 
 struct CameraPicker_Previews: PreviewProvider {
     static var previews: some View {
-        CameraPicker(viewModel: OutlandiaPostsViewModel())
+        CameraPicker(viewModel: CommunityPostsViewModel())
     }
 }
 #endif

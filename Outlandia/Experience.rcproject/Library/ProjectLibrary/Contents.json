@@ -18,5 +18,15 @@
     "libraryIdentifier" : "0c98c33b614ecd08ea007783a681755e",
     "format" : "model",
     "displayName" : "New Project.reality"
+  },
+  {
+    "libraryIdentifier" : "8e95680f050d6fb6724bd573ad659f5b",
+    "format" : "image",
+    "displayName" : "tb.png"
+  },
+  {
+    "libraryIdentifier" : "113a797fb704b1ba5b7fcbaf87d6d5dc",
+    "format" : "model",
+    "displayName" : "SUN_GLASSES.usdz"
   }
 ]

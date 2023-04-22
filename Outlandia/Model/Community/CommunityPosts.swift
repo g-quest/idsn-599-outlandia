@@ -1,5 +1,5 @@
 //
-//  OutlandiaPosts.swift
+//  CommunityPosts.swift
 //  Outlandia
 //
 //  Created by GREGORY CUESTA on 4/16/23.
@@ -8,9 +8,9 @@
 import Foundation
 import SwiftUI
 
-struct OutlandiaPosts {
-    var posts: [Post] = [
-        Post(
+struct CommunityPosts {
+    var posts: [CommunityPost] = [
+        CommunityPost(
             title: "The LACMA Lights",
             location: "Los Angeles, CA",
             image: Image("lacmalights"),
@@ -18,7 +18,7 @@ struct OutlandiaPosts {
             ownerImage: Image("yuning"),
             isLiked: true
         ),
-        Post(
+        CommunityPost(
             title: "Gaslamp",
             location: "San Diego, CA",
             image: Image("gaslamp"),
@@ -26,7 +26,7 @@ struct OutlandiaPosts {
             ownerImage: Image("greg"),
             isLiked: false
         ),
-        Post(
+        CommunityPost(
             title: "Behind the Hollywood Sign",
             location: "Los Angeles, CA",
             image: Image("hollywoodsignback"),
@@ -34,7 +34,7 @@ struct OutlandiaPosts {
             ownerImage: Image("jasmine"),
             isLiked: true
         ),
-        Post(
+        CommunityPost(
             title: "Downtown and the Griffith Observatory",
             location: "Los Angeles, CA",
             image: Image("griffithobservatory"),
@@ -42,7 +42,7 @@ struct OutlandiaPosts {
             ownerImage: Image("jasmine"),
             isLiked: false
         ),
-        Post(
+        CommunityPost(
             title: "The Disney Concert Hall",
             location: "Los Angeles, CA",
             image: Image("disneyconcerthall"),
@@ -50,7 +50,7 @@ struct OutlandiaPosts {
             ownerImage: Image("yuning"),
             isLiked: false
         ),
-        Post(
+        CommunityPost(
             title: "Balboa Park",
             location: "San Diego, CA",
             image: Image("balboapark"),
@@ -60,9 +60,7 @@ struct OutlandiaPosts {
         ),
     ]
     
-    var profile = Profile.default
-    
-    mutating func toggleLiked(_ post: Post) {
+    mutating func toggleLiked(_ post: CommunityPost) {
         let postIndex = posts.firstIndex { p in
             p.id == post.id
         }
@@ -71,11 +69,11 @@ struct OutlandiaPosts {
         posts[actualIndex].isLiked.toggle()
     }
 
-    mutating func add(post: Post) {
+    mutating func add(post: CommunityPost) {
         posts.insert(post, at: 0)
     }
     
-    mutating func delete(_ post: Post) {
+    mutating func delete(_ post: CommunityPost) {
         let postIndex = posts.firstIndex { p in
             p.id == post.id
         }

@@ -1,5 +1,5 @@
 //
-//  PostDetail.swift
+//  CommunityDetail.swift
 //  Outlandia
 //
 //  Created by GREGORY CUESTA on 4/16/23.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct PostDetail: View {
-    @EnvironmentObject var viewModel: OutlandiaPostsViewModel
-    var post: Post
+struct CommunityDetail: View {
+    @EnvironmentObject var viewModel: CommunityPostsViewModel
+    var post: CommunityPost
     
     var postIndex: Int {
-        viewModel.outlandiaPosts.firstIndex(where: { $0.id == post.id })!
+        viewModel.posts.firstIndex(where: { $0.id == post.id })!
      }
     
     var body: some View {
@@ -56,7 +56,7 @@ struct PostDetail: View {
                 
                 Spacer()
                 
-                if (post.owner == viewModel.outlandiaProfile.name) {
+                if (post.owner == "The Outlandia Team") {
                     Button {
                         viewModel.deletePostAt(post)
                     } label: {
@@ -74,10 +74,10 @@ struct PostDetail: View {
     }
 }
 
-struct PostDetail_Previews: PreviewProvider {
-    static let viewModel = OutlandiaPostsViewModel()
+struct CommunityDetail_Previews: PreviewProvider {
+    static let viewModel = CommunityPostsViewModel()
     
     static var previews: some View {
-        PostDetail(post: viewModel.outlandiaPosts[2]).environmentObject(viewModel)
+        CommunityDetail(post: viewModel.posts[2]).environmentObject(viewModel)
     }
 }
