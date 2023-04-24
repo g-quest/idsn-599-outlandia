@@ -12,7 +12,7 @@ struct Collection: View {
     
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             
             // TODO: Make these sections dynamic based on location
             List {

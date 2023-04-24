@@ -14,6 +14,6 @@ struct CollectionBadge: Identifiable {
     var badgeImage: Image
     var description: String
     var locationImages: [String]
-
+    var unlockableContent: [String]?
     
 }

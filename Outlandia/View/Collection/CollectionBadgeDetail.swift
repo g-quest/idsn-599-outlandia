@@ -22,6 +22,12 @@ struct CollectionBadgeDetail: View {
                     Divider()
                     descriptionSection
                     Divider()
+                    
+                    // TODO: Make this dynamic based on model data
+                    if (badge.name == "San Diego Zoo") {
+                        unlockedContentSection
+                    }
+            
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding()
@@ -35,7 +41,7 @@ struct CollectionBadgeDetail_Previews: PreviewProvider {
     static let viewModel = CollectionBadgesViewModel()
     
     static var previews: some View {
-        CollectionBadgeDetail(badge: viewModel.badges.first!)
+        CollectionBadgeDetail(badge: viewModel.badges[2])
     }
 }
 
@@ -72,6 +78,40 @@ extension CollectionBadgeDetail {
                 .font(.subheadline)
                 .foregroundColor(.secondary)
         
+        }
+    }
+    
+    private var unlockedContentSection: some View {
+        VStack (alignment: .leading){
+            Text("Unlocked Content")
+                .font(.title3)
+                .fontWeight(.semibold)
+            
+            HStack {
+                NavigationLink {
+                    CollectionBadgeUnlockable(name: "bear")
+                } label: {
+                    Image("unlockable-bear-1")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 100, height: 100)
+                        .cornerRadius(10)
+                        .shadow(radius: 5)
+                        .padding(10)
+                }
+
+                NavigationLink {
+                    CollectionBadgeUnlockable(name: "panda")
+                } label: {
+                    Image("unlockable-panda-1")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 100, height: 100)
+                        .cornerRadius(10)
+                        .shadow(radius: 5)
+                        .padding(10)
+                }
+            }
         }
     }
 }

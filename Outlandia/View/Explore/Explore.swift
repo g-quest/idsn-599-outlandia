@@ -11,8 +11,7 @@ import ARKit
 
 struct Explore: View {
     var body: some View {
-//        ARViewContainer().edgesIgnoringSafeArea(.all)
-        ARViewContainer()
+        ARViewContainer().edgesIgnoringSafeArea(.top)
     }
 }
 
@@ -27,16 +26,6 @@ struct ARViewContainer: UIViewRepresentable {
         
         // Add the box anchor to the scene
         arView.scene.anchors.append(boxAnchor)
-        
-//        if !ARFaceTrackingConfiguration.isSupported {
-//            print("Your device does not support face anchors!")
-//        } else {
-//            let configuration = ARFaceTrackingConfiguration()
-//            arView.session.run(configuration)
-//
-//            let faceAnchor = try! Experience.loadFace()
-//            arView.scene.addAnchor(faceAnchor)
-//        }
         
         return arView
         

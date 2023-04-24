@@ -41,7 +41,8 @@ struct CollectionBadges {
                 "sd-zoo-1",
                 "sd-zoo-2",
                 "sd-zoo-3",
-            ]
+            ],
+            unlockableContent: ["bear", "panda"]
         ),
         CollectionBadge(
             name: "Balboa Park",

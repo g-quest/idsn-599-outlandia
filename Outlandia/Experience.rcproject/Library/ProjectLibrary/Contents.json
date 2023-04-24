@@ -28,5 +28,15 @@
     "libraryIdentifier" : "113a797fb704b1ba5b7fcbaf87d6d5dc",
     "format" : "model",
     "displayName" : "SUN_GLASSES.usdz"
+  },
+  {
+    "libraryIdentifier" : "906beb268cb6bfe348c309133c14f50c",
+    "format" : "model",
+    "displayName" : "Bear_Face.usdz"
+  },
+  {
+    "libraryIdentifier" : "47ed0dd663cbf83b662b996f36d6fb34",
+    "format" : "model",
+    "displayName" : "Prop146_Panda_Head.usdz"
   }
 ]

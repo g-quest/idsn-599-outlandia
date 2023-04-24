@@ -37,6 +37,7 @@
 		13E8567E29F3D94C00BEF90A /* CollectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E8567D29F3D94C00BEF90A /* CollectionRow.swift */; };
 		13E8568029F3DA4B00BEF90A /* CollectionBadgeIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E8567F29F3DA4B00BEF90A /* CollectionBadgeIcon.swift */; };
 		13E8568229F617ED00BEF90A /* CollectionBadgeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E8568129F617ED00BEF90A /* CollectionBadgeDetail.swift */; };
+		13E8568629F6423E00BEF90A /* CollectionBadgeUnlockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E8568529F6423E00BEF90A /* CollectionBadgeUnlockable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		13E8567D29F3D94C00BEF90A /* CollectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionRow.swift; sourceTree = "<group>"; };
 		13E8567F29F3DA4B00BEF90A /* CollectionBadgeIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBadgeIcon.swift; sourceTree = "<group>"; };
 		13E8568129F617ED00BEF90A /* CollectionBadgeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBadgeDetail.swift; sourceTree = "<group>"; };
+		13E8568529F6423E00BEF90A /* CollectionBadgeUnlockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBadgeUnlockable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				135685FA29ECEF4A00C7EA9A /* Model */,
-				13E8567629F3D2B600BEF90A /* Collection */,
 				135685F929ECEF3A00C7EA9A /* View */,
 				135685FB29ECEF5900C7EA9A /* ViewModel */,
 				135685E929ECDD9100C7EA9A /* AppDelegate.swift */,
@@ -141,6 +142,7 @@
 			children = (
 				13E8566529F3C48800BEF90A /* Discover */,
 				13E8566129F3B8DA00BEF90A /* Community */,
+				13E8567629F3D2B600BEF90A /* Collection */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -203,6 +205,7 @@
 				13E8567D29F3D94C00BEF90A /* CollectionRow.swift */,
 				13E8567F29F3DA4B00BEF90A /* CollectionBadgeIcon.swift */,
 				13E8568129F617ED00BEF90A /* CollectionBadgeDetail.swift */,
+				13E8568529F6423E00BEF90A /* CollectionBadgeUnlockable.swift */,
 			);
 			path = Collection;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				13E8567829F3D31000BEF90A /* CollectionBadge.swift in Sources */,
 				13E8566B29F3C5F700BEF90A /* DiscoverLocations.swift in Sources */,
 				1356860A29ECF41C00C7EA9A /* CommunityPosts.swift in Sources */,
+				13E8568629F6423E00BEF90A /* CollectionBadgeUnlockable.swift in Sources */,
 				1356860129ECF0D700C7EA9A /* Explore.swift in Sources */,
 				13E8566F29F3C84300BEF90A /* DiscoverLocationPreview.swift in Sources */,
 				1356860E29ECF4A600C7EA9A /* CameraPicker.swift in Sources */,
