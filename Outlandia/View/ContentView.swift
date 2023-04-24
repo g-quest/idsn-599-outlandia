@@ -11,6 +11,7 @@ import SwiftUI
 struct ContentView : View {
     @StateObject var discoverViewModel = DiscoverLocationsViewModel()
     @StateObject var communityViewModel = CommunityPostsViewModel()
+    @StateObject var collectionViewModel = CollectionBadgesViewModel()
     
     @State private var selection: Tab = .discover
     
@@ -36,6 +37,7 @@ struct ContentView : View {
                 }
                 .tag(Tab.community)
             Collection()
+                .environmentObject(collectionViewModel)
                 .tabItem {
                     Label("Collection", systemImage: "square.stack.3d.down.right.fill")
                 }
