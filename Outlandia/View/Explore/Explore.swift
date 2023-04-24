@@ -10,12 +10,14 @@ import RealityKit
 import ARKit
 
 struct Explore: View {
+
     var body: some View {
-        ARViewContainer().edgesIgnoringSafeArea(.top)
+        ARViewContainer(viewModel: CollectionBadgesViewModel()).edgesIgnoringSafeArea(.top)
     }
 }
 
 struct ARViewContainer: UIViewRepresentable {
+    var viewModel: CollectionBadgesViewModel
     
     func makeUIView(context: Context) -> ARView {
         
@@ -23,6 +25,11 @@ struct ARViewContainer: UIViewRepresentable {
         
         // Load the "Box" scene from the "Experience" Reality File
         let boxAnchor = try! Experience.loadBox()
+        
+        // Executes when notify trigger hits
+//        boxAnchor.actions.collectBadge.onAction = { entity in
+//            viewModel.addBadge()
+//        }
         
         // Add the box anchor to the scene
         arView.scene.anchors.append(boxAnchor)

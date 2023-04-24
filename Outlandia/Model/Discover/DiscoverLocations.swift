@@ -34,6 +34,7 @@ class DiscoverLocations {
             imageNames: [
                 "sd-balboapark-1",
                 "sd-balboapark-2",
+                "sd-balboapark-3",
             ],
             badgeNames: [
                 "badge-balboapark-1",
@@ -46,6 +47,7 @@ class DiscoverLocations {
             coordinates: CLLocationCoordinate2D(latitude: 32.7353, longitude: -117.1490),
             description: "The San Diego Zoo is a world-renowned wildlife park located in Balboa Park. Home to over 3,700 animals from over 650 species and subspecies, the zoo offers visitors the opportunity to observe exotic animals in a lush and natural setting. With exhibits ranging from the African Plains to the Australian Outback, the San Diego Zoo is a must-visit destination for animal lovers of all ages.",
             imageNames: [
+                "sd-zoo-3",
                 "sd-zoo-1",
                 "sd-zoo-2",
             ],
@@ -62,6 +64,7 @@ class DiscoverLocations {
             imageNames: [
                 "sd-gaslamp-1",
                 "sd-gaslamp-2",
+                "sd-gaslamp-3",
             ],
             badgeNames: [
                 "badge-gaslamp-1",

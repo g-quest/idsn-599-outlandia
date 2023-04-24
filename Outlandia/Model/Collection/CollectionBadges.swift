@@ -38,9 +38,9 @@ struct CollectionBadges {
             badgeImage: Image("badge-zoo-1"),
             description: "The San Diego Zoo is a world-renowned wildlife park located in Balboa Park. Home to over 3,700 animals from over 650 species and subspecies, the zoo offers visitors the opportunity to observe exotic animals in a lush and natural setting. With exhibits ranging from the African Plains to the Australian Outback, the San Diego Zoo is a must-visit destination for animal lovers of all ages.",
             locationImages: [
+                "sd-zoo-3",
                 "sd-zoo-1",
                 "sd-zoo-2",
-                "sd-zoo-3",
             ],
             unlockableContent: ["bear", "panda"]
         ),
@@ -122,10 +122,6 @@ struct CollectionBadges {
             ]
         ),
     ]
-    
-    var categories: [String: [CollectionBadge]] {
-        Dictionary(grouping: badges, by: { $0.location })
-    }
     
     mutating func add(badge: CollectionBadge) {
         badges.insert(badge, at: 0)

@@ -23,23 +23,21 @@ class CollectionBadgesViewModel: ObservableObject {
     // MARK: - User Intent
     
     func addBadge() {
-
-        DispatchQueue.main.async {
-            
-            let newBadge = CollectionBadge(
-                name: "Natural History Museum",
-                location: "San Diego, CA",
-                badgeImage: Image("badge-museum-1"),
-                description: "The San Diego Natural History Museum is a fascinating destination for nature lovers and history buffs alike. Located in the heart of beautiful Balboa Park, this museum features an extensive collection of exhibits that explore the natural world and the history of the San Diego region.",
-                locationImages: [
-                    "sd-museum-1",
-                    "sd-museum-2",
-                    "sd-museum-3",
-                ]
-            )
-
-            self.model.add(badge: newBadge)
-        }
+        
+        print("ADDING BADGE")
+  
+        // TODO: Fix adding badge on box tap
+//        let newBadge = CollectionBadge(
+//            name: "Test Add",
+//            location: "San Diego, CA",
+//            badgeImage: Image("badge-zoo-1"),
+//            description: "Test item",
+//            locationImages: [
+//                "sd-museum-3",
+//            ]
+//        )
+//
+//        self.model.add(badge: newBadge)
     }
 
     
