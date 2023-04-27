@@ -26,7 +26,8 @@ class CollectionBadgesViewModel: ObservableObject {
         
         print("ADDING BADGE")
   
-        // TODO: Fix adding badge on box tap
+        // Future implementation / fix:
+        // Add badge on box tap. Wasn't working on initial attempt.
 //        let newBadge = CollectionBadge(
 //            name: "Test Add",
 //            location: "San Diego, CA",

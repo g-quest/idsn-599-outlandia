@@ -15,7 +15,7 @@ class DiscoverLocations {
             name: "Natural History Museum",
             cityName: "San Diego",
             coordinates: CLLocationCoordinate2D(latitude: 32.732889, longitude: -117.147062),
-            description: "The San Diego Natural History Museum is a fascinating destination for nature lovers and history buffs alike. Located in the heart of beautiful Balboa Park, this museum features an extensive collection of exhibits that explore the natural world and the history of the San Diego region.",
+            description: "The San Diego Natural History Museum is a museum located in Balboa Park in San Diego, California. It was founded in 1874 as the San Diego Society of Natural History. It is the second oldest scientific institution west of the Mississippi and the oldest in Southern California.",
             imageNames: [
                 "sd-museum-1",
                 "sd-museum-2",

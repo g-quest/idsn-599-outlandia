@@ -23,7 +23,8 @@ struct CollectionBadgeDetail: View {
                     descriptionSection
                     Divider()
                     
-                    // TODO: Make this dynamic based on model data
+                    // Future implementation / fix:
+                    // Make this dynamic based on model data
                     if (badge.name == "San Diego Zoo") {
                         unlockedContentSection
                     }

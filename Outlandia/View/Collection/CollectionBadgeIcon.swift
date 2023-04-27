@@ -21,9 +21,6 @@ struct CollectionBadgeIcon: View {
                        RoundedRectangle(cornerRadius: 20)
                            .stroke(.black, lineWidth: 1)
                    )
-//            Text(badge.name)
-//                .foregroundColor(.primary)
-//                .font(.caption)
         }
         .padding(.leading, 15)
     }

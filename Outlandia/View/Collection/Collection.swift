@@ -14,7 +14,8 @@ struct Collection: View {
     var body: some View {
         NavigationStack {
             
-            // TODO: Make these sections dynamic based on location
+            // Future implementation / fix:
+            // Make these sections dynamic based on location
             List {
                 CollectionRow(
                     locationName: "San Diego, CA",

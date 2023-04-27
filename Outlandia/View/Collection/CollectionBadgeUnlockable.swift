@@ -32,6 +32,8 @@ struct ARFaceViewContainer: UIViewRepresentable {
             let configuration = ARFaceTrackingConfiguration()
             arView.session.run(configuration)
 
+            // Future implementation / fix:
+            // Make this more dynamic instead of hard coded
             if (name == "bear") {
                 let faceAnchor = try! Experience.loadBear()
                 arView.scene.addAnchor(faceAnchor)
